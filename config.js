@@ -10,17 +10,17 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "IK~XU9jBLRa#hlJoVZ3RgnnuFOWqS1bXURSyuBMeT8tOu05ma07DnX4",  // Your bot's session ID (keep it secure)
+    SESSION_ID: process.env.SESSION_ID || "IK~CQ9BzZbJ#LKV1VZ1ubAm8ozvQaTq7UI4TxzSznSsMFgjbdAeuQNo",  // Your bot's session ID (keep it secure)
     PREFIX: getConfig("PREFIX") || ".",  // Command prefix (e.g., "., / ! * - +")
     CHATBOT: getConfig("CHATBOT") || "on", // on/off chat bot 
     BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "KHAN-MD",  // Bot's display name
     MODE: getConfig("MODE") || process.env.MODE || "public",        // Bot mode: public/private/group/inbox
-    REPO: process.env.REPO || "https://github.com/Shan-droid770/KHAN-MD",  // Bot's GitHub repo
+    REPO: process.env.REPO || "https://github.com/Shan-droid770/KHAN-MDX",  // Bot's GitHub repo
     BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys",  // Bot's BAILEYS
 
     // ===== OWNER & DEVELOPER SETTINGS =====
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "218931795767",  // Owner's WhatsApp number
-    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "*ᴹᵒⁿᵉʸ ᴾᴼᴵᴺᵀ*",           // Owner's name
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "94763952882",  // Owner's WhatsApp number
+    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "*ꜱᴀʜᴀɴ ᴅɪꜱꜱᴀɴᴀʏᴀᴋᴀ*",           // Owner's name
     DEV: process.env.DEV || "94763952882",                     // Developer's contact number
     DEVELOPER_NUMBER: '94763952882@whatsapp.net',            // Developer's WhatsApp ID
 
@@ -44,13 +44,13 @@ module.exports = {
     MENU_IMAGE_URL: getConfig("MENU_IMAGE_URL") || "https://files.catbox.moe/7zfdcq.jpg",  // Bot's "alive" menu mention image
 
     // ===== SECURITY & ANTI-FEATURES =====
-    ANTI_DELETE: process.env.ANTI_DELETE || "false", // true antidelete to recover deleted messages 
+    ANTI_DELETE: process.env.ANTI_DELETE || "true", // true antidelete to recover deleted messages 
     ANTI_CALL: process.env.ANTI_CALL || "false", // enble to reject calls automatically 
     ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "false",    // Block bad words?
     ANTI_LINK: process.env.ANTI_LINK || "false",    // Block links in groups
     ANTI_VV: process.env.ANTI_VV || "true",   // Block view-once messages
     DELETE_LINKS: process.env.DELETE_LINKS || "false",          // Auto-delete links?
-    ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "same", // inbox deleted messages (or 'same' to resend)
+    ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox", // inbox deleted messages (or 'same' to resend)
     ANTI_BOT: process.env.ANTI_BOT || "false",
     PM_BLOCKER: process.env.PM_BLOCKER || "false",
 
